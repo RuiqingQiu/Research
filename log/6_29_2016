@@ -1,0 +1,41 @@
+Results so far:
+
+Test error on mnist dataset with 1000 training data (first 100 from each class)
+
+Linear Kernel
+Test error: 10.15%
+Quadratic Kernel
+Test error:  8.53%
+Cubic Kernel
+Test error: 10.07%
+Quartic Kernel
+Test error: 12.83%
+
+
+Test error on mnist dataset with 2000 training data (first 200 from each class)
+Linear Kernel
+Test error:  8.75%
+Quadratic Kernel
+Test error:  6.25%
+Cubic Kernel
+Test error:  6.92%
+Quartic Kernel
+Test error:  6.47%
+
+Test error on mnist dataset with 1000 training data (first 100 from each class)
+Arc-cosine Kernel
+l = 1 Error: 8.79%
+l = 2 Error: 8.40%
+l = 3 Error: 8.12%
+l = 4 Error: 7.90%
+l = 5 Error: 7.95%
+
+
+Test error on mnist dataset with 2000 training data (first 200 from each class)
+l = 1 Error: 6.99%
+l = 2 Error: 6.5%
+l = 3 Error: 6.27%
+l = 4 Error: 6.17%
+l = 5 Error: 6.09%
+
+

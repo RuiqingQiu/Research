@@ -1,0 +1,6 @@
+./libsvm-3.21/svm-train -t 4 log/07042016/precomputed_kernel_final log/07042016/custom_model
+./libsvm-3.21/svm-predict log/07042016/precomputed_kernel_test_final log/07042016/custom_model log/07042016/custom_output
+Accuracy = 94.02% (9402/10000) (classification)
+
+format_precomputed.py is used for formatting leKernelTrain2Kx2K into libsvm format
+format_precomputed_test.py is used for formatting leKernelTest2Kx10K into libsvm format

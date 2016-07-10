@@ -1,0 +1,17 @@
+./libsvm-3.21/svm-train -t 4 -c 1000 precomputed_kernel_1_layer 1_layer_model 
+./libsvm-3.21/svm-predict precomputed_kernel_1_layer_test 1_layer_model output
+Accuracy = 94.26% (9426/10000) (classification)
+
+./libsvm-3.21/svm-train -t 4 precomputed_kernel_2_layer 3_layer_model
+./libsvm-3.21/svm-predict precomputed_kernel_2_layer_test 3_layer_model output
+Accuracy = 94.28% (9428/10000) (classification)
+
+./libsvm-3.21/svm-predict precomputed_kernel_3_layer_test 4_layer_model output
+Accuracy = 94.26% (9426/10000) (classification)
+
+./libsvm-3.21/svm-predict precomputed_kernel_4_layer_test 5_layer_model output
+Accuracy = 94.3% (9430/10000) (classification)
+
+Eveything divided by 45000
+./libsvm-3.21/svm-predict precomputed_kernel_1_layer_test 1_layer_model output
+Accuracy = 91.43% (9143/10000) (classification)

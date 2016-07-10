@@ -1,0 +1,64 @@
+Arc-cosine experiment
+1 Layer:
+./libsvm-2.91-arccos/svm-train -N 1 -t 5 1000mnist 1000_mnist_arccos_1_layer_model
+./libsvm-2.91-arccos/svm-predict mnist.scale.t 1000_mnist_arccos_1_layer_model 1000_arccos_output
+Accuracy = 91.21% (9121/10000) (classification)
+
+2 Layer:
+./libsvm-2.91-arccos/svm-train -N 1 1 -t 5 1000mnist 1000_mnist_arccos_2_layer_model
+./libsvm-2.91-arccos/svm-predict mnist.scale.t 1000_mnist_arccos_2_layer_model 1000_arccos_output
+Accuracy = 91.6% (9160/10000) (classification)
+
+3 Layer:
+./libsvm-2.91-arccos/svm-train -N 1 1 1 -t 5 1000mnist 1000_mnist_arccos_3_layer_model
+./libsvm-2.91-arccos/svm-predict mnist.scale.t 1000_mnist_arccos_3_layer_model 1000_arccos_output
+Accuracy = 91.88% (9188/10000) (classification)
+
+4 Layer:
+./libsvm-2.91-arccos/svm-train -N 1 1 1 1 -t 5 1000mnist 1000_mnist_arccos_4_layer_model
+./libsvm-2.91-arccos/svm-predict mnist.scale.t 1000_mnist_arccos_4_layer_model 1000_arccos_output
+Accuracy = 92.1% (9210/10000) (classification)
+
+5 Layer:
+/libsvm-2.91-arccos/svm-train -N 1 1 1 1 1 -t 5 1000mnist 1000_mnist_arccos_5_layer_model
+./libsvm-2.91-arccos/svm-predict mnist.scale.t 1000_mnist_arccos_5_layer_model 1000_arccos_output
+Accuracy = 92.05% (9205/10000) (classification)
+
+
+2000 Training points
+1 Layer:
+./libsvm-2.91-arccos/svm-train -N 1 -t 5 2000mnist 2000_mnist_arccos_1_layer_model
+./libsvm-2.91-arccos/svm-predict mnist.scale.t 2000_mnist_arccos_1_layer_model 2000_arccos_output
+Accuracy = 93.01% (9301/10000) (classification)
+
+2 Layer:
+./libsvm-2.91-arccos/svm-train -N 1 1 -t 5 2000mnist 2000_mnist_arccos_2_layer_model
+./libsvm-2.91-arccos/svm-predict mnist.scale.t 2000_mnist_arccos_2_layer_model 2000_arccos_output
+Accuracy = 93.5% (9350/10000) (classification)
+
+3 Layer:
+./libsvm-2.91-arccos/svm-train -N 1 1 1 -t 5 2000mnist 2000_mnist_arccos_3_layer_model
+./libsvm-2.91-arccos/svm-predict mnist.scale.t 2000_mnist_arccos_3_layer_model 2000_arccos_output
+Accuracy = 93.73% (9373/10000) (classification)
+
+4 Layer:
+./libsvm-2.91-arccos/svm-train -N 1 1 1 1 -t 5 2000mnist 2000_mnist_arccos_4_layer_model
+./libsvm-2.91-arccos/svm-predict mnist.scale.t 2000_mnist_arccos_4_layer_model 2000_arccos_output
+Accuracy = 93.83% (9383/10000) (classification)
+
+5 Layer:
+./libsvm-2.91-arccos/svm-train -N 1 1 1 1 1 -t 5 2000mnist 2000_mnist_arccos_5_layer_model
+./libsvm-2.91-arccos/svm-predict mnist.scale.t 2000_mnist_arccos_5_layer_model 2000_arccos_output
+Accuracy = 93.91% (9391/10000) (classification)
+
+6 Layer:
+ ./libsvm-2.91-arccos/svm-predict mnist.scale.t 2000_mnist_arccos_6_layer_model 2000_arccos_output
+ Accuracy = 94.02% (9402/10000) (classification)
+
+7 Layer:
+./libsvm-2.91-arccos/svm-predict mnist.scale.t 2000_mnist_arccos_7_layer_model 2000_arccos_output
+Accuracy = 94.04% (9404/10000) (classification)
+
+8 Layer:
+./libsvm-2.91-arccos/svm-predict mnist.scale.t 2000_mnist_arccos_8_layer_model 2000_arccos_output
+Accuracy = 94.01% (9401/10000) (classification)

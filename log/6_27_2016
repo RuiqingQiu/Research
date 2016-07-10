@@ -1,0 +1,41 @@
+Linear kernel
+./libsvm-3.21/svm-train -t 0 1000mnist 1000mnist_model
+./libsvm-3.21/svm-predict mnist.scale.t 1000mnist_model 1000_linear_output
+Accuracy = 89.85% (8985/10000) (classification)
+
+Quadratic kernel
+./libsvm-3.21/svm-train -t 1 -d 2 -g 1 -r 1 1000mnist 1000_mnist_quadratic_model
+./libsvm-3.21/svm-predict mnist.scale.t 1000_mnist_quadratic_model 1000_quadratic_output
+Accuracy = 91.47% (9147/10000) (classification)
+
+Cubic Kernel
+./libsvm-3.21/svm-train -t 1 -d 3 -g 1 -r 1 1000mnist 1000_mnist_cubic_model
+./libsvm-3.21/svm-predict mnist.scale.t 1000_mnist_cubic_model 1000_cubic_output
+Accuracy = 89.93% (8993/10000) (classification)
+
+Quartic Kernel
+./libsvm-3.21/svm-train -t 1 -d 4 -g 1 -r 1 1000mnist 1000_mnist_quartic_model
+./libsvm-3.21/svm-predict mnist.scale.t 1000_mnist_quartic_model 1000_quartic_output
+Accuracy = 87.17% (8717/10000) (classification)
+
+
+
+Linear kernel
+./libsvm-3.21/svm-train -t 0 2000mnist 2000_mnist_linear_model
+./libsvm-3.21/svm-predict mnist.scale.t 2000_mnist_linear_model 2000_linear_output
+Accuracy = 91.25% (9125/10000) (classification)
+
+Quadratic kernel
+./libsvm-3.21/svm-train -t 1 -d 2 -g 1 -r 1 2000mnist 2000_mnist_quadratic_model
+./libsvm-3.21/svm-predict mnist.scale.t 2000_mnist_quadratic_model 2000_quadratic_output
+Accuracy = 93.75% (9375/10000) (classification)
+
+Cubic Kernel
+./libsvm-3.21/svm-train -t 1 -d 3 -g 1 -r 1 2000mnist 2000_mnist_cubic_model
+./libsvm-3.21/svm-predict mnist.scale.t 2000_mnist_cubic_model 2000_cubic_output
+Accuracy = 93.08% (9308/10000) (classification)
+
+Quartic Kernel
+/libsvm-3.21/svm-train -t 1 -d 4 -g 1 -r 1 2000mnist 2000_mnist_quartic_model
+./libsvm-3.21/svm-predict mnist.scale.t 2000_mnist_quartic_model 2000_quartic_output
+Accuracy = 91.53% (9153/10000) (classification)
