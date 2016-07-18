@@ -19,17 +19,17 @@ for element in everything:
     ei = int(element[2])
     ej = int(element[3])
     k = float(element[4])
-    i = 0 
+    i = 0
     if di == 0:
-        i = (10 - 1)*200 + ei - 1 
+        i = (10 - 1)*200 + ei - 1
     else:
-        i = (di - 1) * 200 + ei - 1 
-    j = 0 
+        i = (di - 1) * 200 + ei - 1
+    j = 0
     if dj == 0:
-        j = (10 - 1)*200 + ej - 1 
+        j = (10 - 1)*200 + ej - 1
     else:
-        j = (dj - 1) * 200 + ej - 1 
-    K[i][j] = k 
+        j = (dj - 1) * 200 + ej - 1
+    K[i][j] = k
 
 def trace(K):
     sum = 0.0
