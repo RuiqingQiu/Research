@@ -3,23 +3,30 @@ fw = open('overall.txt', 'w')
 # Digit A
 start_time = time.time()
 index = 1
+
+number_of_digits = [15,10,10,10,10,10,10,10,10,10]
+
 for i in range(0, 10):
-    #Number of examples
     f_arr = []
     for j in range(0, 10):
+        f = open('K_'+str(i)+'vs'+str(j)+'.txt','r')
+        f_arr.append((f, 0))
+        '''
         if(i <= j):
             f = open('K_'+str(i)+'vs'+str(j)+'.txt','r')
-            f_arr.append(f)
+            f_arr.append((f, 0))
         else:
             f = open('K_'+str(j)+'vs'+str(i)+'.txt', 'r')
-            f_arr.append(f)
-    for k in range(0, 10):
+            f_arr.append((f, 1))
+        '''
+    #Number of examples
+    for k in range(0, number_of_digits[i]):
         #write the label
         fw.write(str(i) + ' ' + '0:' + str(index) + ' ')
         index = index + 1
         matrix_index = 1
         #write all the matrix element
-        for f in f_arr:
+        for f, num in f_arr:
             tmp = f.readline().rstrip('\n')
             lst = tmp.split()
             for number in lst:
